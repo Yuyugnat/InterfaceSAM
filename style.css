@@ -1,0 +1,133 @@
+html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+}
+
+#fond {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-image: url("SAM.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    z-index: 0;
+}
+
+#page-reglage {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+#page-ticket {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+#boutons {
+    width: 100%;
+    height: 6.6vh;
+}
+
+#logo {
+    height: 54.3vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-ticket {
+    margin-bottom: 1.3vh;
+}
+
+.info {
+    background: white;
+    border-radius: 20px;
+    width: 92%;
+    height: 14.6vh;
+}
+
+#img-logo {
+    height: 40%;
+    aspect-ratio: 1/1;
+    background: white;
+    border-radius: 100000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#img-logo > img {
+    height: 85%;
+    aspect-ratio: 1/1;
+    border-radius: 100000px;
+}
+
+#circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    animation: tourne 5s linear reverse infinite;
+}
+
+.boule {
+    height: 12vw;
+    width: 12vw;
+    border-radius: 1000px;
+    position: absolute;
+    z-index: 4;
+}
+
+#vert {
+    background: #058013;
+    top: calc(50% - 12vw / 2);
+    left: calc(-15vw / 2);
+}
+
+#rose {
+    background: #d431cc;
+    top: calc(50% - 12vw / 2);
+    right: calc(-12vw / 2);
+}
+
+
+#info-controle {
+}
+
+#progress-bar {
+    width: 100%;
+    height: 8.6vh;
+    border: solid red;
+}
+
+#progress-bar > div {
+    
+}
+
+@keyframes tourne {
+    to {
+        transform: rotate(360deg);
+    }
+}
